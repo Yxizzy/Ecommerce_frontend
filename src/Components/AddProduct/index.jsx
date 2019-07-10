@@ -107,32 +107,32 @@ class ProductDetail extends React.Component {
                                 <div className="w3-row w3-row-padding">
                                     <div className="w3-col m6">
                                         <label>Product Name</label>
-                                        <input className="w3-input" type="text" onChange={this.handleChange('name')} />
+                                        <input className="w3-input" type="text" onChange={this.handleChange('name')} required/>
                                     </div>
 
                                     <div className="w3-col m6">
                                         <label>Product Price</label>
-                                        <input className="w3-input" type="number" onChange={this.handleChange('price')}/>
+                                        <input className="w3-input" type="number" onChange={this.handleChange('price')} required/>
                                     </div>
 
                                     <div className="w3-col m6">
                                         <label>Product Category</label>
-                                        <input className="w3-input" type="text" onChange={this.handleChange('category')} />
+                                        <input className="w3-input" type="text" onChange={this.handleChange('category')} required/>
                                     </div>
 
                                     <div className="w3-col m6">
                                         <label>Product Color</label>
-                                        <input className="w3-input" type="text" onChange={this.handleChange('color')}/>
+                                        <input className="w3-input" type="text" onChange={this.handleChange('color')} required/>
                                     </div>
 
                                     <div className="w3-col m12">
                                         <label>Product Description</label>
-                                        <input className="w3-input" type="text" onChange={this.handleChange('description')}/>
+                                        <input className="w3-input" type="text" onChange={this.handleChange('description')} required/>
                                     </div>
 
                                     <div className="w3-col m12">
                                         <label>Upload Image</label>
-                                        <input className="w3-input" type="file" onChange={this.handleChangeImage()} ref="uploadImg"/>
+                                        <input className="w3-input" type="file" onChange={this.handleChangeImage()} ref="uploadImg" required/>
                                     </div>
 
                                     <div className="w3-col m12">

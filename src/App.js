@@ -3,7 +3,7 @@ import './App.css';
 import Products from "./Components/Products";
 import {BrowserRouter, Route} from "react-router-dom";
 import Header from "./Components/Header";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 import Product from "./Components/Product";
 import AddProduct from "./Components/AddProduct";
 
@@ -15,7 +15,7 @@ function App() {
         <Route path="/add" component={AddProduct} />
         <Route path="/product/:id" component={Product} />
         <Route path="/search/:str" component={Products} />
-        <Footer/>
+       
       </BrowserRouter>
   );
 }
